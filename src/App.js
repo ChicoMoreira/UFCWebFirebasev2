@@ -120,9 +120,9 @@ function App(props) {
         <Route path="listStudent" element={<ListStudent setShowToast={setShowToast} setToast={setToast}/>} />
         <Route path="editStudent/:id" element={<EditStudent setShowToast={setShowToast} setToast={setToast}/>} />
 
-        <Route path="createProfessor" element={<CreateProfessor />} />
-        <Route path="listProfessor" element={<ListProfessor />} />
-        <Route path="editProfessor/:id" element={<EditProfessor />} />
+        <Route path="createProfessor" element={<CreateProfessor setShowToast={setShowToast} setToast={setToast}/>} />
+        <Route path="listProfessor" element={<ListProfessor setShowToast={setShowToast} setToast={setToast}/>} />
+        <Route path="editProfessor/:id" element={<EditProfessor setShowToast={setShowToast} setToast={setToast}/>} />
       </Routes>
     </div>
 
